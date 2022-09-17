@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durbek</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            min-height: 100vh;
+        }
+        a {
+            position: relative;
+                top: 60px;
+                right: 140px;
+                border: none;
+                border-radius: 50px;
+                background: rgb(47, 33, 251);
+                background: linear-gradient(0deg, rgb(33, 73, 251) 0%, rgb(76, 113, 234) 100%);
+                color: #fff;
+                overflow: hidden;
+                width: 120px;
+                height: 35 px;
+                font-size: 27px;
+                text-decoration: none;
+                width: 170px;
+                height: 30px;
+                padding: 10px 10px 10px 60px;
+            }
+    
+            a:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            a:before {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                top: -180px;
+                left: 0;
+                width: 30px;
+                height: 100%;
+                background-color: #fff;
+                animation: shiny-btn1 3s ease-in-out infinite;
+            }
+    
+            a:hover {
+                opacity: .7;
+            }
+    
+            a:active {
+                box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                    inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+            }
+    </style>
+    <input type="color" id="color">
+    <a href="#">click 👆 input</a>
+    <script src="main.js"></script>
+</body>
+</html>
